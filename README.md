@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# REACT MEDIA PLAYER
+React media player
+## Description
+This project is a web application that allows users to manage their YouTube videos. Users can log in, add YouTube videos, view all added videos, sort videos, and delete videos. The application is built using ReactJS for the frontend, Redux for state management, and Lucide React for icons.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
+To install and run this project, follow these steps:
 
-In the project directory, you can run:
+1. Clone the repository to your local machine.
+2.  Navigate to the project directory.
+3.  Install the necessary dependencies by running npm install or yarn add.
+4.  Start the application by running npm start or yarn start.
 
-### `yarn start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After starting the application, users can:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Log in to access their dashboard.
+- Add YouTube videos by providing the video URL.
+- View all added videos in a list.
+- Sort videos based on different criteria (title, artist, album).
+- Delete videos from their list.
 
-### `yarn test`
+## Features 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Video Management: Users can add, view, sort, and delete YouTube videos.
+- Responsive Design: The application is designed to be responsive and user-friendly.
 
-### `yarn build`
+## Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- react-router-dom: For managing routing in the application.
+- react-redux, @reduxjs/toolkit, @redux-devtools/extension: For state management and development tools.
+- react-player: For playing YouTube videos.
+- lucide-react: For using icons in the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ReactJS: A JavaScript library for building user interfaces.
+- Redux: A predictable state container for JavaScript apps.
+- Lucide React: A library of icons for React application
 
-### `yarn eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.

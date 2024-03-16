@@ -1,0 +1,14 @@
+.music{
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 10%;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.music__container__player{
+    width: 100px;
+    height: 150px;
+}

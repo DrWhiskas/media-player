@@ -1,0 +1,5 @@
+.music-list{
+    display: flex;
+    position: relative;
+    width: 100svw;
+}
