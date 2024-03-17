@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import MusicList from './pages/MusicList';
 import Login from './pages/Login';
 import reportWebVitals from './reportWebVitals';
-
+//Styled Component
+import GlobalStyle from './GlobalStyles';
 //REDUX
-
 import { Provider } from 'react-redux';
 import store from './features/store'; 
 
@@ -17,6 +16,7 @@ root.render(
 	<React.StrictMode>
 		<Provider store={store}>
 			<HashRouter>
+				<GlobalStyle />
 				<Routes>
 					<Route path="/" element={<Login />} />
 					<Route path="/home" element={<Home />} />

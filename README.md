@@ -39,6 +39,7 @@ After starting the application, users can:
 - ReactJS: A JavaScript library for building user interfaces.
 - Redux: A predictable state container for JavaScript apps.
 - Lucide React: A library of icons for React application
+- Styled-components
 
 ## License
 

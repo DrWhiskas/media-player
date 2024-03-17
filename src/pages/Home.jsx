@@ -1,17 +1,21 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import MusicForm from '../components/MusicForm';
-import { IoAddCircleOutline } from 'react-icons/io5';
+import { CirclePlus } from 'lucide-react'
 import Header from '../components/Header';
+import '../styles/home.css';
 
-import '../styles/home.css'
+//Styled Components
+
+
+
 
 export default function Home() {
-    const [isFormIsOpen, setIsFormIsOpen] = useState(false)
+	const [isFormIsOpen, setIsFormIsOpen] = useState(false);
 
-    function handleForm(){
-        setIsFormIsOpen(!isFormIsOpen)
-    }
+	function handleForm() {
+		setIsFormIsOpen(!isFormIsOpen);
+	}
 
 	return (
 		<div className="home">
@@ -20,7 +24,7 @@ export default function Home() {
 				<h1 className="home__container__title">REACT MEDIA PLAYER</h1>
 				<div className="home__container__links">
 					<button className="home__container__btn" onClick={handleForm}>
-						<IoAddCircleOutline />
+						<CirclePlus />
 						Add Music
 					</button>
 					<Link to="/musiclist">

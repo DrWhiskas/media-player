@@ -3,7 +3,56 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from 'react-router-dom';
 import { setToken } from "../features/store";
 
-import '../styles/login.css'
+import styled from "styled-components";
+//Styled Components
+
+const StyledLogin = styled.section`
+	height: 100svh;
+	width: 100svw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
+
+const StyledForm = styled.form`
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	padding: 1%;
+	background-color: #f8f9fe;
+	width: calc(200px + 15svw);
+	height: calc(250px + 30svh);
+	gap: 3%;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	color: black;
+	border-radius: 10px;
+`;
+
+const StyledInput = styled.input`
+	height: 30px;
+	padding: 1%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: none;
+
+	&:focus{
+		outline: none;
+	}
+`;
+
+const StyledButton = styled.button`
+	height: 50px;
+	font-weight: bold;
+	margin-top: 10%;
+	border: none;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+	&:hover{
+		cursor: pointer;
+	}
+`;
+
 
 export default function Login(){
     const dispatch = useDispatch()
@@ -28,14 +77,11 @@ export default function Login(){
 			}
 		}
         return (
-					<section className="login">
-						<form className="login__container" onSubmit={handleSubmit}>
-							<div className="login__container__header">
-								<h2 className="login__container__header__title">Login</h2>
-							</div>
-
+					<StyledLogin>
+						<StyledForm onSubmit={handleSubmit}>
+							<h2 className="login__container__header__title">Login</h2>
 							<label htmlFor="pseudo">Pseudo</label>
-							<input
+							<StyledInput
 								type="text"
 								id="pseudo"
 								name="pseudo"
@@ -45,7 +91,7 @@ export default function Login(){
 								}
 							/>
 							<label htmlFor="email">email</label>
-							<input
+							<StyledInput
 								type="email"
 								id="email"
 								name="email"
@@ -55,7 +101,7 @@ export default function Login(){
 								}
 							/>
 							<label htmlFor="password">Password</label>
-							<input
+							<StyledInput
 								type="password"
 								id="password"
 								name="password"
@@ -64,10 +110,10 @@ export default function Login(){
 									setFormData({ ...formData, password: e.target.value })
 								}
 							/>
-							<button type="submit" className="login__btn btn-dark">
+							<StyledButton type="submit" className="login__btn btn-dark">
 								Login
-							</button>
-						</form>
-					</section>
+							</StyledButton>
+						</StyledForm>
+					</StyledLogin>
 				);
 }

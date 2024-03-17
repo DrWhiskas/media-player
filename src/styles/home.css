@@ -42,11 +42,3 @@
     cursor: pointer;
     background-color: #cccccc;
 }
-.btn-dark{
-    background-color: #222323;
-    color: #F8F9FE;
-    transition: all ease-in-out .2s;
-}
-.btn-dark:hover{
-    background-color: #3a3a3a;
-}

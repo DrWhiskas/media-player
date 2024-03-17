@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addMusic } from '../features/store.js';
 import Modal from './Modal.jsx';
-import { IoClose } from 'react-icons/io5';
+import { X } from 'lucide-react';
 import '../styles/musicForm.css';
 
 export default function MusicForm({ closeForm }) {
@@ -19,22 +19,21 @@ export default function MusicForm({ closeForm }) {
 
 	function closeModal() {
 		setIsModalOpen(false);
+		
 	}
 	function openModal() {
 		setIsModalOpen(true);
+		closeForm()
 	}
 
 	function handleSubmit(e) {
 		e.preventDefault();
 
-		const isFormValid = Object.values(formData).every(
-			(value) => value.trim() !== ''
-		);
-		if (isFormValid) {
+		if (!formData.url === '' && !formData.title === '') {
 			dispatch(addMusic(formData));
 			openModal();
 		} else {
-			alert('Pas remplis');
+			alert('You need to add an url');
 		}
 	}
 	console.log(newData);
@@ -50,7 +49,7 @@ export default function MusicForm({ closeForm }) {
 						className="music-form__container__header__close"
 						onClick={closeForm}
 					>
-						<IoClose />
+						<X />
 					</button>
 				</div>
 
