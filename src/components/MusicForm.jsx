@@ -28,12 +28,12 @@ export default function MusicForm({ closeForm }) {
 
 	function handleSubmit(e) {
 		e.preventDefault();
-
 		if (formData.url === '' && formData.title === '') {
+			
+			
+		} else{
 			dispatch(addMusic(formData));
 			openModal();
-		} else {
-			alert('You need to add an url');
 		}
 	}
 	console.log(newData);
