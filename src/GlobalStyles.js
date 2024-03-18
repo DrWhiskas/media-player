@@ -36,6 +36,9 @@ const GlobalStyle = createGlobalStyle`
     .btn-dark:hover{
     background-color: #3a3a3a;
     }
+    label{
+        
+    }
 `;
 
 export default GlobalStyle;

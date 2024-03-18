@@ -29,7 +29,7 @@ export default function MusicForm({ closeForm }) {
 	function handleSubmit(e) {
 		e.preventDefault();
 
-		if (!formData.url === '' && !formData.title === '') {
+		if (formData.url === '' && formData.title === '') {
 			dispatch(addMusic(formData));
 			openModal();
 		} else {

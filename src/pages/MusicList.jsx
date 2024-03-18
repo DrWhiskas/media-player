@@ -1,12 +1,20 @@
 import React from "react";
 import Music from "../components/Music";
 import Header from '../components/Header';
-import '../styles/musicList.css'
+import styled from "styled-components";
+// Styled-Components
+
+const StyledMusicList = styled.section`
+	display: flex;
+	position: relative;
+	width: 100svw;
+`;
+
 export default function MusicList(){
     return (
-			<section className="music-list">
+			<StyledMusicList>
 				<Header />
 				<Music />
-			</section>
+			</StyledMusicList>
 		);
 }

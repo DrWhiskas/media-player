@@ -52,6 +52,9 @@ const StyledButton = styled.button`
 		cursor: pointer;
 	}
 `;
+const StyledSubTitle = styled.h2=`
+	
+`
 
 
 export default function Login(){
