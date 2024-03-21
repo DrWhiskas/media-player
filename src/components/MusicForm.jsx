@@ -5,6 +5,8 @@ import Modal from './Modal.jsx';
 import { X } from 'lucide-react';
 import '../styles/musicForm.css';
 
+
+
 export default function MusicForm({ closeForm }) {
 	const dispatch = useDispatch();
 	const newData = useSelector((state) => state.music);
@@ -19,19 +21,16 @@ export default function MusicForm({ closeForm }) {
 
 	function closeModal() {
 		setIsModalOpen(false);
-		
 	}
 	function openModal() {
 		setIsModalOpen(true);
-		closeForm()
+		closeForm();
 	}
 
 	function handleSubmit(e) {
 		e.preventDefault();
 		if (formData.url === '' && formData.title === '') {
-			
-			
-		} else{
+		} else {
 			dispatch(addMusic(formData));
 			openModal();
 		}
