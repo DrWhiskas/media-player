@@ -88,10 +88,6 @@ export default function Header(){
 	// Render the header with links and logout button
 	return (
 		<StyledHeader>
-			<StyledList>
-				<BuildLink link="/home" text="Home" />
-				<BuildLink link="/musiclist" text="Musics" />
-			</StyledList>
 			<StyledHeaderUser className="header__user">
 				<StyledButton  onClick={handleDisconnected}>
 					<LogOut />

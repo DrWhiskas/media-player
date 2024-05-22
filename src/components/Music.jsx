@@ -22,7 +22,6 @@ export default function Music() {
 	return (
 		<section className="music">
 			<h2 className="music__title">Music</h2>
-			<SearchBar  />
 			<div className="music__container">
 				{musicData.length > 0 ? (
 					musicData.map((item, index) => (

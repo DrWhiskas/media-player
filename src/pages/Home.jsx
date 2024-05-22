@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import MusicForm from '../components/MusicForm';
+import Music from '../components/Music';
 import { CirclePlus } from 'lucide-react'
 import Header from '../components/Header';
 import '../styles/home.css';
-
-//Styled Components
-
-
-
 
 export default function Home() {
 	const [isFormIsOpen, setIsFormIsOpen] = useState(false);
@@ -34,6 +30,7 @@ export default function Home() {
 					</Link>
 				</div>
 			</div>
+			<Music />
 			{isFormIsOpen && <MusicForm closeForm={handleForm} />}
 		</div>
 	);
